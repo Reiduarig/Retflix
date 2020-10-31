@@ -1,0 +1,492 @@
+
+
+body{
+    margin: 0px auto;
+    padding: 0px;
+    background: rgba(0, 0, 0);
+    font-family: 'Netflix Sans','Bebas Neue' cursive  ;
+    background-image: radial-gradient(rgba(243, 42, 166, 0.1), rgba(172, 25, 25, 0.1));
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* ------------------------- header ----------------------------------*/
+header{
+    width: 100%;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    z-index: 1;
+}
+header h1{
+    width: 10%;
+    margin-left: 10px;
+    animation-name: backgroundLogo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+header nav{
+    width: 75%;
+}
+header .menu-responsive{
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    display: none;
+
+}
+header .menu-responsive span{
+  
+    font-weight: 500;
+}
+header .menu-responsive .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: rgb(0, 0, 0, .3);
+    border-radius: 5px;
+    list-style: none;
+}
+header .menu-responsive .dropdown-content li:hover{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    
+}
+header .menu-responsive .dropdown-content a{
+    color: rgb(228, 205, 205);
+    text-decoration: none;
+}
+header .menu-responsive .dropdown-content a:hover{
+    border-radius:  5px;
+    color: black;
+}
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    list-style: none;
+}
+header nav ul li{
+    margin-right: 20px; 
+}
+header nav ul li a{
+    color: #aaa;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+header nav ul li a:hover{
+    color: white;
+}
+/*avatar*/
+.avatar{
+    width: 62px;
+    height: 62px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-image: url(../images/avatar.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    position: relative;
+    margin-left: 30px;
+}
+.avatar .dropdown-content{
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    border-radius: 4px;
+    right: 0;
+ 
+}
+.avatar .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.avatar:hover .dropdown-content {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: 2s;
+    font-weight: 400;
+}
+.avatar .dropdown-content a:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+
+/* ------ destacado ----------*/
+
+.destacado{
+    width: 100%;
+    min-height: 40.60em;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: flex-end;
+    background-image: url(../images/13.jpg);
+    background-position: center;
+    background-size: cover;
+    font-size: 16px;
+    color: white;
+    animation-name: storm ;
+    animation-duration: 30s;
+}
+.destacado .titulo{
+    margin: 10px;
+    font-size: 40px;
+    font-weight: 600;
+    animation-name: storm ;
+    animation-duration: 50s;
+}
+.destacado .descripcion{
+    margin:10px;
+    max-width: 50%;
+    animation-name: storm ;
+    animation-duration: 50s;
+}
+
+.botones{
+    width: 68%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 2em;
+    animation-name: storm ;
+    animation-duration: 50s;
+    
+}
+.botones .boton{
+   
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .5);
+    color: rgba(255, 255, 255);
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px;
+    transition: 0.5s;
+}
+.botones .boton:hover{
+    background-color: rgba(255, 255, 255, .8);
+    color:  black;
+}
+.botones .boton i{
+    margin-right: 10px;
+}
+/*------ secciones ---------*/
+
+section{
+    margin: 60px 0px;
+}
+section h2{
+    color: white;
+    font-size: 18px;
+    margin: 10px;
+}
+.section-header{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-left: 10px;
+}
+.section-header a{
+    font-size: 12px;
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    font-style: italic;
+}
+.section-header a:hover{
+    color: #aaa;
+}
+/*peliculas recomendadas*/
+.recomendadas, .estrenos{
+    width: 100%;
+    position: relative;
+}
+.recomendadas .container, .estrenos .container{
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0px 20px;
+}
+/*--- flechas --- */
+.left-arrow, .right-arrow,.left-arrow1, .right-arrow1{
+    width: 30px;
+    position: absolute;
+    border: none;
+    height: 75%;
+    line-height: 40px;
+    background-color: rgba(0, 0, 0, .3);
+    color: white;
+    z-index: 500;
+    cursor: pointer;
+    transition:  .2s ease all;
+}
+.left-arrow, .left-arrow1{
+    left: 10;
+    top: 0;
+}
+.right-arrow, .right-arrow1{
+    right: 0;
+    top:0;
+}
+.left-arrow:hover{
+   background: rgba(0, 0, 0, .7);
+  
+}
+.right-arrow:hover{
+    background: rgba(0, 0, 0, .7);
+   
+}
+/* ---  carousel  ---*/
+.carousel-container{
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    
+}
+.carousel{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.carousel .pelicula{
+    min-width: 20%;
+    height: 180px;
+    transition: .3s ease all;
+    position: relative;
+}
+
+.carousel .pelicula img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgb(148, 147, 146);
+}
+/* segmento del velo que se mostrará tras el hover */
+.carousel .pelicula .img-overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    top:0;
+    left: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+.pelicula .img-overlay:hover{
+
+    animation-name: fade;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-direction: normal;
+    animation-delay: 0.5s;
+    transition-delay: 1s;
+    transform-origin: center;
+    transition:  .4s;
+    z-index: 1;
+}
+/*enlace video*/
+.pelicula .img-overlay iframe{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 2px;
+}
+.pelicula .img-overlay a{
+    color:white;
+}
+.pelicula .img-overlay .circle-info{
+    margin: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+   
+}
+.pelicula .img-overlay .circle-info a{
+    margin-right: 5px;
+}
+.pelicula .img-overlay .overlay-title{
+    margin: 2px;
+    color: lightgreen;
+    font-weight: bold;
+    font-size: 14px;
+}
+.pelicula .img-overlay .overlay-description{
+    margin: 2px;
+    font-size: 12px;
+}
+footer{
+    min-height: 200px;
+    background: rgba(255, 255, 255, 0.1);
+}
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+/*------------------- Animations -----------------------*/
+/*
+@keyframes translacion{
+    0% { transform: translateY(0px); }
+    25% { transform: translateY(15px); }
+    50% { transform: translateY(25px); }
+    100% { transform: translateY(50px); }
+}*/
+
+
+@keyframes fade {
+    from { opacity: .4 }
+    to { opacity: 1 }
+    0% { transform: scale(1, 1); }
+  100% { transform: scale(1.4, 1); }
+  /*0% { transform: translate(0px,0px); }
+  100% {transform: translate(40px,10px); }*/
+  from { background-color: rgb(0, 0, 0); }
+    to { background-color: rgb(34, 34, 34); }
+   
+}
+
+@keyframes storm {
+    0% { opacity: 0; }
+    1% { opacity: 0; }
+    2% { opacity: 0; }
+    3% { opacity: 0; }
+    10%{ opacity: 1; }
+}
+
+
+
+@keyframes backgroundLogo{
+
+    from { color: rgb(116, 27, 233); }
+    to { color: rgb(224, 8, 8); }
+}
+
+@keyframes rotate {
+        0% { transform: rotateY(0deg); }
+       25% { transform: rotateY(90deg); }
+       50% { transform: rotateY(180deg); }
+       75% { transform: rotateY(270deg); }
+      100% { transform: rotateY(360deg); }
+}
+
+/* ------------------- MediaQueries ---------------------*/
+@media screen and (max-width: 800px){
+    header{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+    header .logo{
+        width: 33%;
+    }
+    header h1{
+       width: 100%;
+       font-size: 30px;
+    }
+    header nav{
+        width: 15%;
+    }
+    header .menu-responsive{
+        width: 33%;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+       
+    }
+    header .menu-responsive span{
+        display: flex;
+    }
+    header .menu-responsive:hover .dropdown-content{
+       display: flex;
+       flex-direction: column;
+       margin-top: 15px;
+       line-height: 25px;
+       padding: 10px;
+    }
+    header .dropdown-content{
+        color: white;
+    }
+    header nav ul{
+        display: none;
+        flex-direction: column;
+    }
+    header nav ul li a{
+        margin: 0px;
+    }
+    .avatar{
+        margin-right: 70px;
+        width: 40px;
+        height: 40px;
+    }
+    .avatar img{
+        width: 40px;
+        height: 45px;
+    }
+    .avatar .dropdown-content{
+        position: sticky;
+    }
+    .avatar .dropdown-content a{
+        font-size: 12px;
+        font-weight: 600;
+    }
+    
+    .destacado{
+        font-size: 14px;
+    }
+    .destacado .titulo{
+        font-size:18px;
+    }
+    .destacado .descripcion{
+        max-width: 100%;
+        font-size: 10px;
+    }
+    .carousel-container{
+        height: 255px;
+    }
+    .carousel .pelicula{
+        min-width: 200px;
+    }
+    .botones .boton{
+        padding:0px;
+        font-size: 1em;
+        padding: 1em;
+    }
+
+    .pelicula .img-overlay .overlay-title{
+        margin: 5px;
+        color: lightgreen;
+        font-weight: bold;
+    }
+    .pelicula .img-overlay .overlay-description{
+        margin: 5px;
+        font-size: 10px;
+    }
+
+    section h2{
+        font-size: 14px;
+    }
+}

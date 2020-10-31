@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflix</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Retflix</h1>
+        </div>
+        <nav>
+            <div class="menu-responsive">
+               <span>Menú</span>
+               <i class="fas fa-caret-down"></i>
+                <div class="dropdown-content">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Series</a></li>
+                    <li><a href="#">Documentales</a></li>
+                    <li><a href="#">Películas</a></li>
+                    <li><a href="#">Mi lista</a></li>
+                </div>
+            </div>    
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Series</a></li>
+                <li><a href="#">Documentales</a></li>
+                <li><a href="#">Películas</a></li>
+                <li><a href="#">Mi lista</a></li>
+            </ul>
+        </nav>
+        <div class="avatar">
+            
+              <div class="dropdown-content">
+                <a href="#">Mi Cuenta</a>
+                <a href="#">Configuración</a>
+                <a href="#">Cerrar sesión</a>
+              </div>
+              
+        </div>
+    </header>
+    <main>
+        <div class="destacado">
+            <div class="contenedor-principal">
+                <h1 class="titulo">La monja</h1>
+                <p class="descripcion">Cuando una joven monja se suicida en un aislado monasterio en Rumania, el Vaticano manda a un sacerdote perseguido por su pasado y a una novicia a punto de tomar sus votos para investigar el caso. Juntos descubren el impío secreto de la orden. No solamente arriesgan sus vidas sino también su fe y sus almas cuando enfrentan una fuerza malévola en forma de la misma monja demoníaca que ya había aterrorizado al público en "El Conjuro 2". El monasterio se convierte en un horrendo campo de batalla entre los vivos y los condenados.</p>
+            </div>
+            <div class="botones">
+                <button class="boton">
+                    <i class="fas fa-play"></i>Reproducir
+                </button>
+                <button class="boton">
+                    <i class="fas fa-info-circle"></i>Más información
+                </button>
+            </div>    
+        </div>
+        <section class="recomendadas">
+            <div class="section-header">
+                <h2>Películas Recomendadas</h2><a href="#">Ver todo</a>
+            </div>
+            <div class="container">
+                <button class="left-arrow" role="button" onclick="right_scroll()"><i class="fas fa-angle-left"></i></button>
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <div class="pelicula" style="background-image: url(assets/images/01.jpg); background-size: cover;">
+                            
+                            <div class="img-overlay">
+                                <iframe src="https://www.youtube.com/embed/KBiOF3y1W0Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="circle-info">
+                                    <a href="#"><i class="far fa-play-circle"></i></a>
+                                    <a href="#"><i class="fas fa-star"></i></a>
+                                </div>
+                                <div class="overlay-title">
+                                    Recomendada
+                                </div>
+                                <p class="overlay-description">
+                                    <span>Duración: 1h 45m</span><br>
+                                    Galardonada-Drama
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pelicula" style="background-image: url(assets/images/02.jpg); background-size: cover;">
+                           
+                            <div class="img-overlay">
+                                <iframe width="120" height="120" src="https://www.youtube.com/embed/AhwawKgb-kI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                <div class="circle-info">
+                                    <a href="#"><i class="far fa-play-circle"></i></a>
+                                    <a href="#"><i class="fas fa-star"></i></a>
+                                </div>
+                                <div class="overlay-title">
+                                    Recomendada
+                                </div>
+                                <p class="overlay-description">
+                                    <span>Duración: 1h 50m</span><br>
+                                    Novedad-Psicológica
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pelicula" style="background-image: url(assets/images/03.jpg); background-size: cover;">
+                   
+                            <div class="img-overlay">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/pyWuHv2-Abk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                <div class="circle-info">
+                                    <a href="#"><i class="far fa-play-circle"></i></a>
+                                    <a href="#"><i class="fas fa-star"></i></a>
+                                </div>
+                                <div class="overlay-title">
+                                    Recomendada
+                                </div>
+                                <p class="overlay-description">
+                                    <span>Duración: 2h 10m</span><br>
+                                    Novedad-Terror
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pelicula" style="background-image: url(assets/images/04.jpg); background-size: cover;">
+                            
+                            <div class="img-overlay">
+                                <iframe width="120" height="120" src="https://www.youtube.com/embed/vayksn4Y93A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                <div class="circle-info">
+                                    <a href="#"><i class="far fa-play-circle"></i></a>
+                                    <a href="#"><i class="fas fa-star"></i></a>
+                                </div>
+                                <div class="overlay-title">
+                                    Recomendada
+                                </div>
+                                <p class="overlay-description">
+                                    <span>Duración: 1h 35m</span><br>
+                                    Novedad-Psicológica
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pelicula" style="background-image: url(assets/images/05.jpg); background-size: cover;">
+                
+                            <div class="img-overlay">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/OjRs7pEWaTs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                <div class="circle-info">
+                                    <a href="#"><i class="far fa-play-circle"></i></a>
+                                    <a href="#"><i class="fas fa-star"></i></a>
+                                </div>
+                                <div class="overlay-title">
+                                    Recomendada
+                                </div>
+                                <p class="overlay-description">
+                                    <span>Duración: 2h 25m</span><br>
+                                    Novedad-Bélica
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pelicula" style="background-image: url(assets/images/06.jpg); background-size: cover;">
+              
+                            <div class="img-overlay">
+                                <iframe width="120" height="120" src="https://www.youtube.com/embed/7q-ETFeMxwI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                <div class="circle-info">
+                                    <a href="#"><i class="far fa-play-circle"></i></a>
+                                    <a href="#"><i class="fas fa-star"></i></a>
+                                </div>
+                                <div class="overlay-title">
+                                    Recomendada
+                                </div>
+                                <p class="overlay-description">
+                                    <span>Duración: 2h 45m</span><br>
+                                    Galardonada-Histórica
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pelicula" style="background-image: url(assets/images/07.jpg); background-size: cover;">
+             
+                            <div class="img-overlay">
+                                <iframe width="120" height="120" src="https://www.youtube.com/embed/r5KDiUNZv4w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                <div class="circle-info">
+                                    <a href="#"><i class="far fa-play-circle"></i></a>
+                                    <a href="#"><i class="fas fa-star"></i></a>
+                                </div>
+                                <div class="overlay-title">
+                                    Recomendada
+                                </div>
+                                <p class="overlay-description">
+                                    <span>Duración: 2h 15m</span><br>
+                                    Comedia-Psicológica
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pelicula" style="background-image: url(assets/images/08.jpg); background-size: cover;">
+              
+                            <div class="img-overlay">
+                                <iframe width="120" height="120" src="https://www.youtube.com/embed/A1eC4pG8rC0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                <div class="circle-info">
+                                    <a href="#"><i class="far fa-play-circle"></i></a>
+                                    <a href="#"><i class="fas fa-star"></i></a>
+                                </div>
+                                <div class="overlay-title">
+                                    Recomendada
+                                </div>
+                                <p class="overlay-description">
+                                    <span>Duración: 2h 35m</span><br>
+                                    Novedad-Psicológica
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pelicula" style="background-image: url(assets/images/09.png); background-size: cover;">
+                            
+                            <div class="img-overlay">
+                                <iframe width="120" height="120" src="https://www.youtube.com/embed/FyP4rXUmQ2U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                <div class="circle-info">
+                                    <a href="#"><i class="far fa-play-circle"></i></a>
+                                    <a href="#"><i class="fas fa-star"></i></a>
+                                </div>
+                                <div class="overlay-title">
+                                    Recomendada
+                                </div>
+                                <p class="overlay-description">
+                                    <span>Duración: 2h 45m</span><br>
+                                    Galardonada-Drama
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pelicula" style="background-image: url(assets/images/10.jpg); background-size: cover;">
+               
+                            <div class="img-overlay">
+                                <iframe width="120" height="120" src="https://www.youtube.com/embed/si12yPyTnSs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                <div class="circle-info">
+                                    <a href="#"><i class="far fa-play-circle"></i></a>
+                                    <a href="#"><i class="fas fa-star"></i></a>
+                                </div>
+                                <div class="overlay-title">
+                                    Recomendada
+                                </div>
+                                <p class="overlay-description">
+                                    <span>Duración: 2h 50m</span><br>
+                                    Galardonada-Drama
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <button class="right-arrow" role="button" onclick="left_scroll()"><i class="fas fa-angle-right"></i></button>
+            </div>    
+        </section>
+        <section class="estrenos">
+            <div class="section-header">
+                <h2>Estrenos</h2><a href="#">Ver todo</a>
+            </div>
+            <div class="container">
+                <button class="left-arrow1" role="button" onclick="right_scroll()"><i class="fas fa-angle-left"></i></button>
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <div class="pelicula" style="background-image: url(assets/images/11.jpg); background-size: cover;">
+                            <div class="img-overlay">
+                                <iframe width="120" height="120" src="https://www.youtube.com/embed/Oyuomep8Ac4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                <div class="circle-info">
+                                    <a href="#"><i class="far fa-play-circle"></i></a>
+                                    <a href="#"><i class="fas fa-star"></i></a>
+                                </div>
+                                <div class="overlay-title">
+                                    Estreno
+                                </div>
+                                <p class="overlay-description">
+                                    <span>Duración: 1h 45m</span><br>
+                                    Estreno-Psicológica
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pelicula" style="background-image: url(assets/images/12.jpg); background-size: cover;">
+                            <div class="img-overlay">
+                                <iframe width="120" height="120" src="https://www.youtube.com/embed/KtN6fpjRSHs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                <div class="circle-info">
+                                    <a href="#"><i class="far fa-play-circle"></i></a>
+                                    <a href="#"><i class="fas fa-star"></i></a>
+                                </div>
+                                <div class="overlay-title">
+                                    Estreno
+                                </div>
+                                <p class="overlay-description">
+                                    <span>Duración: 1h 45m</span><br>
+                                    Estreno-Suspense
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pelicula" style="background-image: url(assets/images/13.jpg); background-size: cover;">
+                            <div class="img-overlay">
+                                <iframe width="120" height="120" src="https://www.youtube.com/embed/AKpPeLAMY9I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                <div class="circle-info">
+                                    <a href="#"><i class="far fa-play-circle"></i></a>
+                                    <a href="#"><i class="fas fa-star"></i></a>
+                                </div>
+                                <div class="overlay-title">
+                                    Estreno
+                                </div>
+                                <p class="overlay-description">
+                                    <span>Duración: 1h 45m</span><br>
+                                    Estreno-Terror
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pelicula" style="background-image: url(assets/images/14.jpg); background-size: cover;">
+                            <div class="img-overlay">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/RhgeNY24wZY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                <div class="circle-info">
+                                    <a href="#"><i class="far fa-play-circle"></i></a>
+                                    <a href="#"><i class="fas fa-star"></i></a>
+                                </div>
+                                <div class="overlay-title">
+                                    Estreno
+                                </div>
+                                <p class="overlay-description">
+                                    <span>Duración: 1h 45m</span><br>
+                                    Estreno-Terror
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pelicula" style="background-image: url(assets/images/15.jpg); background-size: cover;">
+                            <div class="img-overlay">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/bxG9VN9RrVs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                <div class="circle-info">
+                                    <a href="#"><i class="far fa-play-circle"></i></a>
+                                    <a href="#"><i class="fas fa-star"></i></a>
+                                </div>
+                                <div class="overlay-title">
+                                    Estreno
+                                </div>
+                                <p class="overlay-description">
+                                    <span>Duración: 1h 45m</span><br>
+                                    Estreno-Psicológica
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pelicula" style="background-image: url(assets/images/16.jpg); background-size: cover;">
+                            <div class="img-overlay">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/yQdjDtlK3uQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                <div class="circle-info">
+                                    <a href="#"><i class="far fa-play-circle"></i></a>
+                                    <a href="#"><i class="fas fa-star"></i></a>
+                                </div>
+                                <div class="overlay-title">
+                                    Estreno
+                                </div>
+                                <p class="overlay-description">
+                                    <span>Duración: 1h 45m</span><br>
+                                    Estreno-Drama
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pelicula" style="background-image: url(assets/images/01.jpg); background-size: cover;">
+                            <div class="img-overlay">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/KBiOF3y1W0Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="circle-info">
+                                    <a href="#"><i class="far fa-play-circle"></i></a>
+                                    <a href="#"><i class="fas fa-star"></i></a>
+                                </div>
+                                <div class="overlay-title">
+                                    Estreno
+                                </div>
+                                <p class="overlay-description">
+                                    <span>Duración: 1h 45m</span><br>
+                                    Estreno-Psicológica
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pelicula" style="background-image: url(assets/images/10.jpg); background-size: cover;">
+                            <div class="img-overlay">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/KBiOF3y1W0Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="circle-info">
+                                    <a href="#"><i class="far fa-play-circle"></i></a>
+                                    <a href="#"><i class="fas fa-star"></i></a>
+                                </div>
+                                <div class="overlay-title">
+                                    Estreno
+                                </div>
+                                <p class="overlay-description">
+                                    <span>Duración: 1h 45m</span><br>
+                                    Estreno-Psicológica
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pelicula" style="background-image: url(assets/images/10.jpg); background-size: cover;">
+                            <div class="img-overlay">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/KBiOF3y1W0Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="circle-info">
+                                    <a href="#"><i class="far fa-play-circle"></i></a>
+                                    <a href="#"><i class="fas fa-star"></i></a>
+                                </div>
+                                <div class="overlay-title">
+                                    Estreno
+                                </div>
+                                <p class="overlay-description">
+                                    <span>Duración: 1h 45m</span><br>
+                                    Estreno-Psicológica
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pelicula" style="background-image: url(assets/images/10.jpg); background-size: cover;">
+                            <div class="img-overlay">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/KBiOF3y1W0Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="circle-info">
+                                    <a href="#"><i class="far fa-play-circle"></i></a>
+                                    <a href="#"><i class="fas fa-star"></i></a>
+                                </div>
+                                <div class="overlay-title">
+                                    Estreno
+                                </div>
+                                <p class="overlay-description">
+                                    <span>Duración: 1h 45m</span><br>
+                                    Estreno-Psicológica
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <button class="right-arrow1" role="button" onclick="left_scroll(this)"><i class="fas fa-angle-right"></i></button>
+            </div>    
+        </section>
+    </main>
+    <footer>
+
+    </footer>  
+    <script>
+        const fila = document.querySelector('.carousel-container');
+        const peliculas = document.querySelector('.pelicula');
+
+        const left_arrow= document.querySelector('.left-arrow');
+        const right_arrow= document.querySelector('.right-arrow');
+        const left_arrow1= document.querySelector('.left-arrow1');
+        const right_arrow1= document.querySelector('.right-arrow1');
+
+        function left_scroll(){
+            console.log('left');
+            fila.scrollLeft += fila.offsetWidth;
+        }
+        function right_scroll(){
+            console.log('right');
+            fila.scrollLeft -= fila.offsetWidth;
+        }
+
+
+
+    </script> 
+</body>
+</html>
